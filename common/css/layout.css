@@ -3,9 +3,10 @@ Default layout styles
 */
 
 * {
-    font-family: cursive;
+    font-family: monospace;
     font-size: 14px;
     font-weight: normal;
+    color: #222222;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     overflow: auto;
 }
 
-div {
+body > div {
     display: block;
     
     margin: 0;
@@ -32,7 +33,7 @@ div::-webkit-scrollbar-thumb {
     background-color: whitesmoke;
 }
 div::-webkit-scrollbar-thumb:hover {
-    background-color: #149bdf;
+    background-color: #7991E8;
 }
 
 #header {
@@ -46,7 +47,9 @@ div::-webkit-scrollbar-thumb:hover {
     height: 50px;
     width: 100%;
     
-    background: #149bdf;
+    background: #7991E8;
+    
+    font-family: sans-serif;
 }
 #header label {
     font-size: 40px;
@@ -75,10 +78,15 @@ div::-webkit-scrollbar-thumb:hover {
     left: 0px;
     right: 0px;
     margin: auto;
+    padding: 10px;
     
-    width: 1200px;
+    width: 1180px;
     height: auto;
     
     overflow-y: auto;
     overflow-wrap: break-word;
+}
+#mainContainer > div {
+    height: auto;
+    height: auto !important;
 }

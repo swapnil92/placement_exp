@@ -1,11 +1,235 @@
 /*
 Default styling for classes, ids and elements
+
+.containerTile
+    Description: the containers in main_container
+    
+.title
+    Description: the title of anything
+
+.error
+    Description: special error messages
+
+.footNote 
+    Description: Additional optional explanatory notes
+
+.fieldSet
+    Description: (label, input) pair for user input
+
+    - .fieldName
+        Description: the name of the field (label part).
+    -.fieldValue
+        Description: the input box for taking input
+
+.button
+    Description: for every button
+
+.buttonSet
+    Description: the set of buttons available for actions
+    
+    -.yesButton 
+        Description: showing preferable action button
+    -.noButton 
+        Description: showing non preferable action button
+
+.image
+    Description: the default designs for image elements
+
+.mediumImageContainer
+    Description: The container for holding medium sized image
+
+.imageCaption
+    Description: The area to put captions
 */
+.containerTile {
+    position: relative;
+    display: inline-block;
+    background: white;
+    
+    box-shadow: 0px 0px 5px black;
+    
+    padding: 5px;
+    
+    margin-bottom: 10px;
+}
+
 .title {
     display: block;
+    
     width: 100%;
-    height: 20px;
+    height: 30px;
+
+    margin-bottom: 10px;
+    
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    
+    color: #b94a48;
+    
+    border-bottom: 1px #d4d4d4 solid;
+}
+
+.error {
+    display: block;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+    
+    width: 400px;
+    height: auto;
+    height: auto !important;
+    
+    font-family: monospace;
+    text-align: center;
+    
+    background-color: seashell;
+    color: tomato;
+    
+    border: 1px red solid;
+}
+
+.footNote {
+    display: block;
+    
+    color: #aaaaaa;
+}
+
+.fieldSet {
+    position: relative;
+    display: inline-block;
+    
+    height: auto;
+    height: auto !important;
+    
+    margin-bottom: 10px;
+}
+
+.fieldName {
+    position: relative;
+    display: block;
+    
+    float: left;
+    margin-top: 5px;
+    
+    text-align: right;
+}
+
+.fieldValue {
+    position: relative;
+    display: block;
+    
+    float: left;
+    margin-left: 5px;
+    
+    text-align: center;
+    
+    font-family: cursive;
+}
+
+
+.buttonSet {
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+    height: auto;
+    height: auto !important;
+    
+    padding-top: 10px;
+    
+    border-top: 1px #d4d4d4 solid;
+}
+
+.button {
+    height: 25px;
+    vertical-align: middle;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.yesButton {
+    color: white;
+    background:  #73739c;
+    
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
     
     font-weight: bold;
+    font-family: monospace;
+    
+    padding: 5px;
+    padding-top: 3px;
+}
+.yesButton:hover {
+    background: #646491;
+}
+
+.noButton {
+    color: black;
+    background: white;
+    
+    border: 1px darkslategrey solid;
+    border-radius: 5px;
+    font-family: monospace;
+    
+    padding: 5px;
+    padding-top: 3px;
+}
+.noButton:hover {
+    background: whitesmoke;
+}
+
+.image {
+    position: relative;
+    display: block;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.image:hover {
+    box-shadow: 0px 0px 5px #646491;
+}
+
+.mediumImageContainer {
+    position: relative;
+    float: left;
+    
+    height: auto;
+    height: auto !important;
+    width: 180px;
+    
+    border: 1px double #d4d4d4;
+    margin-right: 5px;
+    
+    overflow: hidden;
+}
+.mediumImageContainer > .image {
+    height: 180px;
+    width: 170px;
+}
+
+.imageCaption {
+    position: relative;
+    display: block;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 160px;
+    height: auto;
+    height: auto !important;
+    
+    text-align: center;
     font-size: 16px;
+    font-family: sans-serif;
 }
