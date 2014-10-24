@@ -1,0 +1,11 @@
+/*
+Default styling for classes, ids and elements
+*/
+.title {
+    display: block;
+    width: 100%;
+    height: 20px;
+    
+    font-weight: bold;
+    font-size: 16px;
+}
