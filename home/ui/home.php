@@ -22,14 +22,14 @@ session_start();
                             <label class="imageCaption footNote">Gautam Singh</label>
                         </div>
                         <span class="commentText">
-                            One fine day (actually the time was 1.30 am..!), I got to hear the news of my friend had got placed in a
-                            in an organization which came for placement in our campus.
-                            He, after the incident described his adventurous and joyful journey of ending up in a job starting from the ragging period. 
-                            I thought why not share such interesting moments with people like us, who struggle for getting into the job and after getting 
-                            one, they end up in telling stories, rather very funny interesting and motivational stories.
+                            One fine day (actually the time was 1.30 am..!), I got to hear the news of my friend had got placed in an organization which 
+                            came for placement in our campus. He, after the incident described his adventurous and joyful journey of ending up in a job 
+                            starting from the ragging period. I thought why not share such interesting moments with people like us, who struggle for 
+                            getting into the job and after getting one, they end up in telling stories, rather very funny interesting and motivational 
+                            stories.
                             <br><br>
                             I thought of building this platform a while ago then I really started just because I wanted to confirm if I am right about
-                            the philosophy that WE love telling about our journey. After meeting a bunch of such people (including me) I started my 
+                            the philosophy that WE love telling about our journey. After meeting a bunch of such people (including me). I started my 
                             work on this platform. It aims to make their story reach out to mass and as well as simultaneously teach juniors whatsoever
                             it may be related to final year days (or placement days).
                             <br><br>
