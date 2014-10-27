@@ -4,8 +4,8 @@ session_start();
 <html>
     <head>
         <title>Welcome</title>
-        <link rel="stylesheet" href="/placement_exp/common/css/layout.css" >
-        <link rel="stylesheet" href="/placement_exp/common/css/defStyle.css" >
+        <link rel="stylesheet" href="../../common/css/layout.css" >
+        <link rel="stylesheet" href="../../common/css/defStyle.css" >
         <link rel="stylesheet" href="../css/home.css">
     </head>
     <body>
