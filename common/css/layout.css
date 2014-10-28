@@ -1,14 +1,6 @@
 /*
 Default layout styles
 */
-
-* {
-    font-family: monospace;
-    font-size: 14px;
-    font-weight: normal;
-    color: #222222;
-}
-
 body {
     padding: 0;
     margin: 0;
@@ -85,8 +77,4 @@ div::-webkit-scrollbar-thumb:hover {
     
     overflow-y: auto;
     overflow-wrap: break-word;
-}
-#mainContainer > div {
-    height: auto;
-    height: auto !important;
 }

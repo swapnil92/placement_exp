@@ -1,73 +1,290 @@
 /*
-Default styling for classes, ids and elements
-
-.containerTile
-    Description: the containers in main_container
-    
-.title
-    Description: the title of anything
-
-.error
-    Description: special error messages
-
-.footNote 
-    Description: Additional optional explanatory notes
-
-.fieldSet
-    Description: (label, input) pair for user input
-
-    - .fieldName
-        Description: the name of the field (label part).
-    -.fieldValue
-        Description: the input box for taking input
-
-.button
-    Description: for every button
-
-.buttonSet
-    Description: the set of buttons available for actions
-    
-    -.yesButton 
-        Description: showing preferable action button
-    -.noButton 
-        Description: showing non preferable action button
-
-.image
-    Description: the default designs for image elements
-
-.mediumImageContainer
-    Description: The container for holding medium sized image
-
-.imageCaption
-    Description: The area to put captions
+Input boxes
 */
-.containerTile {
+.inp-box {
+    display: inline-block;
+    
+    text-align: center;
+    
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+    outline: 0;
+    border: none;
+    
+    vertical-align: baseline;
+}
+.inp-box:focus {
+    box-shadow: 0px 0px 10px #0077b3;
+}
+
+.inp-box.small {
+    height: 20px;
+    width: 100px;
+}
+.inp-box.small-high {
+    height: 25px;
+    width: 100px;
+}
+.inp-box.medium {
+    height: 30px;
+    width: 300px;
+}
+.inp-box.medium-high {
+    height: 35px;
+    width: 300px;
+}
+.inp-box.large {
+    height: 30px;
+    width: 500px;
+}
+.inp-box.large-high {
+    height: 35px;
+    width: 500px;
+}
+.inp-box.vlarge {
+    height: 30px;
+    width: 1000px;
+}
+.inp-box.vlarge-high {
+    height: 35px;
+    width: 1000px;
+}
+
+
+/*********************************************************************
+Labels
+*/
+label {
+    display: inline-block;
+    
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+}
+label.fieldName {
+    left: 0;
+    
+    vertical-align: bottom;
+    
+    text-align: right;
+    margin-right: 20px;
+}
+
+/*********************************************************************
+Buttons
+*/
+
+.btn {
+    display: inline-block;
+    
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #d4d4d4;
+    
+    width: auto;
+    width: auto !important;
+    
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+    vertical-align: bottom;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn.small {
+    height: 20px;
+}
+.btn.medium {
+    height: 25px;
+}
+.btn.large {
+    height: 30px;
+}
+.btn.primary {
+    color: white;
+    background: #085;
+    
+    border-color: green;
+}
+.btn.primary:hover {
+    background: green;
+    border-color: #085;
+}
+.btn.secondary {
+    color: black;
+    background: white;
+    
+    border-color: whitesmoke;
+}
+.btn.secondary:hover {
+    background: whitesmoke;
+}
+.btn.danger {
+    
+}
+
+/*********************************************************************
+Links
+*/
+a:link {
+    position: relative;
+    display: inline-block;
+    color: #0081c2;
+    text-decoration: none;
+}
+a:visited {
+    color: #0081c2;
+}
+a:hover {
+    color: tomato;
+}
+a:active {
+    color: red;
+}
+
+/*********************************************************************
+Divisions
+*/
+div.containerTile {
     position: relative;
     display: inline-block;
     background: white;
     
     box-shadow: 0px 0px 5px black;
     
-    padding: 5px;
-    
-    margin-bottom: 10px;
+    border-radius: 5px;
 }
+div.innerContainer {
+    position: relative;
+    display: inline-block;
 
-.title {
+    height: auto;
+    height: auto !important;
+    
+    margin: 10px;
+}
+div.title {
     display: block;
     
     width: 100%;
     height: 30px;
-
-    margin-bottom: 10px;
     
     text-align: center;
-    font-family: sans-serif;
+    font-family: Georgia, serif;
     font-size: 25px;
     
-    color: #b94a48;
+    background: #d6e9c6;
+    color: tomato;
+}
+div.fieldSet {
+    display: inline-block;
     
-    border-bottom: 1px #d4d4d4 solid;
+    height: auto;
+    height: auto !important;
+    width: auto;
+    width: auto !important;
+    
+    margin-bottom: 10px;
+}
+
+div.commentText {
+    position: relative;
+    display: table-row;
+    
+    width: 100%;
+    height: auto;
+    height: auto !important;
+}
+
+/*********************************************************************
+Images
+*/
+
+.imageContainer {
+    position: relative;
+    display: table-cell;
+    float: left;
+    
+    height: auto;
+    height: auto !important;
+    width: auto;
+    width: auto !important;
+    
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+}
+.imageContainer:hover {
+    box-shadow: 0px 0px 5px #646491;
+}
+.image {
+    position: relative;
+    display: block;
+}
+.image.vsmall {
+    height: 50px;
+    width: 47px;
+}
+.image.small {
+    height: 100px;
+    width: 95px;
+}
+.image.medium {
+    height: 180px;
+    width: 170px;
+}
+.image.large {
+    height: 220px;
+    width: 208px;
+}
+.image.vlarge {
+    height: 250px;
+    width: 236px;
+}
+
+.caption {
+    position: relative;
+    display: block;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+        
+    width: 100%;
+    height: auto;
+    height: auto !important;
+    
+    text-align: center;
+    font-weight: bold;
+    color: #aaaaaa;
+    
+    border-top: 1px solid #aaaaaa;
+}
+
+
+/*
+Paragraph
+*/
+p {
+    font-size: 16px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+p+p {
+    margin-top: 0px;
+}
+p:first-letter {
+    font-size: 50px;
+}
+p+p:first-letter {
+    font-size: 16px;
 }
 
 .error {
@@ -95,141 +312,4 @@ Default styling for classes, ids and elements
     display: block;
     
     color: #aaaaaa;
-}
-
-.fieldSet {
-    position: relative;
-    display: inline-block;
-    
-    height: auto;
-    height: auto !important;
-    
-    margin-bottom: 10px;
-}
-
-.fieldName {
-    position: relative;
-    display: block;
-    
-    float: left;
-    margin-top: 5px;
-    
-    text-align: right;
-}
-
-.fieldValue {
-    position: relative;
-    display: block;
-    
-    float: left;
-    margin-left: 5px;
-    
-    text-align: center;
-    
-    font-family: cursive;
-}
-
-
-.buttonSet {
-    position: relative;
-    display: inline-block;
-    
-    width: 100%;
-    height: auto;
-    height: auto !important;
-    
-    padding-top: 10px;
-    
-    border-top: 1px #d4d4d4 solid;
-}
-
-.button {
-    height: 25px;
-    vertical-align: middle;
-}
-.button:hover {
-    cursor: pointer;
-}
-
-.yesButton {
-    color: white;
-    background:  #73739c;
-    
-    box-shadow: none;
-    border: none;
-    border-radius: 5px;
-    
-    font-weight: bold;
-    font-family: monospace;
-    
-    padding: 5px;
-    padding-top: 3px;
-}
-.yesButton:hover {
-    background: #646491;
-}
-
-.noButton {
-    color: black;
-    background: white;
-    
-    border: 1px darkslategrey solid;
-    border-radius: 5px;
-    font-family: monospace;
-    
-    padding: 5px;
-    padding-top: 3px;
-}
-.noButton:hover {
-    background: whitesmoke;
-}
-
-.image {
-    position: relative;
-    display: block;
-    
-    left: 0;
-    right: 0;
-    margin: auto;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.image:hover {
-    box-shadow: 0px 0px 5px #646491;
-}
-
-.mediumImageContainer {
-    position: relative;
-    float: left;
-    
-    height: auto;
-    height: auto !important;
-    width: 180px;
-    
-    border: 1px double #d4d4d4;
-    margin-right: 5px;
-    
-    overflow: hidden;
-}
-.mediumImageContainer > .image {
-    height: 180px;
-    width: 170px;
-}
-
-.imageCaption {
-    position: relative;
-    display: block;
-    
-    left: 0;
-    right: 0;
-    margin: auto;
-    
-    width: 160px;
-    height: auto;
-    height: auto !important;
-    
-    text-align: center;
-    font-size: 16px;
-    font-family: sans-serif;
 }
